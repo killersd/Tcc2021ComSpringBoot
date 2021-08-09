@@ -1,0 +1,99 @@
+import br.com.ifs.SintomasClassificacao;
+//-------------------------------------------------------------------------------------------------------------------
+//Regras para o grupo CRIANÇAS classificação VERMELHA
+
+rule "Baba-se"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Baba-se")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end
+	
+rule "Choque"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Choque")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+	
+rule "Convulsionando"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Convulsionando")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+	
+rule "Criança não reativa"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Criança não reativa")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+	
+rule "Estridor"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Estridor")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+		
+rule "Hipoglicemia"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Hipoglicemia")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+		
+rule "Não reativa"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Não reativa")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+	
+rule "Obstrução das vias aéreas"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Obstrução das vias aéreas")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+		
+rule "Respiração Inadequada"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Respiração Inadequada")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+//------------------------------------------------------------------------------------------------------------------------	
+
+//Regras para o grupo TRAUMAS classificação VERMELHA
+
+rule "Choque_traumas"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="traumas" && Sintomas=="Choque")
+	then
+		offerObject.setClassificacao("VERMELHA");
+	end	
+
+//------------------------------------------------------------------------------------------------------------------------
+
+//Regras para o grupo CRIANÇAS classificação LARANJA
+
+rule "Comprometimento vascular distal"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Comprometimento vascular distal")
+	then
+		offerObject.setClassificacao("LARANJA");		
+	end	
+
+rule "Criança quente"
+	when 
+		offerObject: SintomasClassificacao(Grupo=="criancas" && Sintomas=="Criança quente")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end	
+	
+	
+	
+	
+	
